@@ -6,9 +6,9 @@ In addition, to install the lxml package, the following C libraries' development
 header are necessary to be installed. Here are some example commands:
 
 ```bash
-apt-get install libxml2-dev libxslt-dev
-yum install libxml2-devel libxslt-devel
-pacaur -S libxml2 libxslt
+sudo apt-get install -y libxml2-dev libxslt-dev libpq-dev
+sudo yum install libxml2-devel libxslt-devel libpq-devel
+sudo pacaur -S libxml2 libxslt libpq-devel
 ```
 
 To work on this project you may need a C compiler since some of the packages
@@ -23,7 +23,7 @@ Set up the virtualenv and install the packages:
 
 ```bash
 python -m venv venv
-. venv/bin/active
+source venv/bin/active
 pip install -r setup/requirements.txt
 pip install -r setup/dev-requirements.txt
 ```

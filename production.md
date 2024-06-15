@@ -7,7 +7,7 @@ likely some things that won't work on Windows.
 
 ```bash
 python -m venv venv
-. venv/bin/active
+source venv/bin/active
 pip install -r setup/requirements.txt
 ```
 

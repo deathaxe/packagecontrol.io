@@ -5,43 +5,44 @@
 Nodejs is used for compiling handlebars and coffeescript files.
 
 ```bash
-sudo apt install nodejs
+sudo apt install -y nodejs
 ```
 
 Make sure we have Python 3 and tools to create a virtual environment for it.
 
 ```bash
-sudo apt install python3 python3-venv python3-pip
+sudo apt install -y python3 python3-venv python3-pip
 ```
 
 Install PostgreSQL for the database.
 
 ```bash
-sudo apt install postgresql
+sudo apt install -y postgresql
 ```
 
 Install Redis for caching
 
 ```bash
-sudo apt install redis
+sudo apt install -y redis
 ```
 
 Install Nginx for the web server
 
 ```bash
-sudo apt nginx-full nginx-extras
+sudo apt install -y nginx-full
+sudo apt install -y nginx-extras
 ```
 
 Install git for downloading `package_control_channel` for crawler
 
 ```bash
-sudo apt git
+sudo apt install -y git
 ```
 
 For development
 
 ```bash
-sudo apt install libxml2-dev libxslt-dev
+sudo apt install -y libxml2-dev libxslt-dev libpq-dev
 ```
 
 ## Setup
@@ -65,6 +66,7 @@ Set up the virtual environment and install the packages.
 
 ```bash
 python -m venv venv
+source venv/bin/activate
 pip install -r setup/requirements.txt
 pip install -r setup/dev-requirements.txt
 ```

@@ -4,7 +4,7 @@ from __future__ import unicode_literals, division, absolute_import, print_functi
 # This file exists strictly to make it easier to vendor a combination of
 # oscrypto and asn1crypto
 
-from ..asn1crypto import algos, cms, core, keys, pem, pkcs12, util, x509
+from asn1crypto import algos, cms, core, keys, pem, pkcs12, util, x509
 
 DHParameters = algos.DHParameters
 DSASignature = algos.DSASignature
